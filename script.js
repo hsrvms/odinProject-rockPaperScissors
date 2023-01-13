@@ -32,7 +32,7 @@ function game() {
 
   for (let i = 0; i < 5; i++) {
 
-    const playerSelection = "rock";
+    const playerSelection = prompt("Rock, Paper, Scissors ?").toLowerCase();
     const computerSelection = getComputerChoice();
 
     let roundScore = playRound(playerSelection, computerSelection);
@@ -56,8 +56,5 @@ function game() {
     return "You Lost!";
   }
 }
-
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
 
 console.log(game());
