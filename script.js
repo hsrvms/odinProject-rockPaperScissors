@@ -50,6 +50,4 @@ function game() {
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 
-
-console.log(`${playerSelection} vs ${computerSelection}`);
 console.log(game());
