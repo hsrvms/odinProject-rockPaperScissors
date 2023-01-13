@@ -31,19 +31,29 @@ function game() {
   let computerScore = 0;
 
   for (let i = 0; i < 5; i++) {
-    if (playRound(playerSelection, computerSelection).includes('Win')) {
+
+    const playerSelection = "rock";
+    const computerSelection = getComputerChoice();
+
+    let roundScore = playRound(playerSelection, computerSelection);
+
+    if (roundScore.includes('Win')) {
       playerScore++;
-    } else if (playRound(playerSelection, computerSelection).includes('Lose')) {
+    } else if (roundScore.includes('Lose')) {
       computerScore++;
     }
 
-    if (playerScore === computerScore) {
-      return "Draw!!!";
-    } else if (playerScore > computerScore) {
-      return "You Won!";
-    } else {
-      return "You Lost!";
-    }
+    console.log(roundScore);
+    console.log(`You | ${playerScore} - ${computerScore} | Computer`)
+    console.log("-------------------------------")
+  }
+
+  if (playerScore === computerScore) {
+    return "Draw!!!";
+  } else if (playerScore > computerScore) {
+    return "You Won!";
+  } else {
+    return "You Lost!";
   }
 }
 
