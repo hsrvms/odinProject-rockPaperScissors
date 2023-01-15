@@ -37,10 +37,22 @@ html {
 
 .content__header {
   font-size: 3rem;
+
+  color: var(--green-color)
 }
 
-.content__score-table {
+.content__score {
   font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.content__score span {
+  color: var(--green-color);
 }
 
 .content__buttons {

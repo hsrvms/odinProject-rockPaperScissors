@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content__header">
+        <h1>Rock - Paper - Scissors</h1>
+      </div>
 
-  <div class="content">
-    <div class="content__header">
-      <h1>Rock - Paper - Scissors</h1>
+      <div class="content__score">
+        <h3 class="score-table">You 0 - 0 Thor</h3>
+        <h4 class="score-text">
+          If you want to go <span>Valhalla</span> first you should beat
+          <span>Thor</span> in this game!!
+        </h4>
+      </div>
+
+      <div class="content__buttons">
+        <button value="Rock" class="rps">Rock</button>
+        <button value="Paper" class="rps">Paper</button>
+        <button value="Scissors" class="rps">Scissors</button>
+      </div>
+
+      <div class="content__reset">
+        <button class="reset">Play Again</button>
+      </div>
     </div>
 
-    <div class="content__score-table">
-      <h3 class="score-table-text">You 0 - 0 Computer</h3>
-    </div>
-
-    <div class="content__buttons">
-      <button value="Rock" class="rps">Rock</button>
-      <button value="Paper" class="rps">Paper</button>
-      <button value="Scissors" class="rps">Scissors</button>
-    </div>
-
-    <div class="content__reset">
-      <button class="reset">Play Again</button>
-    </div>
-
-  </div>
-  
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
