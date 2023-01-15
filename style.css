@@ -1,0 +1,98 @@
+@font-face {
+  font-family: NorseBold;
+  src: url(./assets/Norse-Bold.otf);
+}
+
+:root {
+  --green-color: #1fd868;
+  --white-color: #e7e8d6;
+  --black-color: #130b0f;
+  --gray-color: rgb(142, 111, 120);
+  --red-color: #401e2f;
+}
+
+html {
+  font-family: NorseBold;
+  color: var(--white-color);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  background: var(--black-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.content__header {
+  font-size: 3rem;
+}
+
+.content__score-table {
+  font-size: 2rem;
+}
+
+.content__buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+button {
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  background: var(--red-color);
+  color: var(--green-color);
+  font-family: NorseBold;
+  font-size: 2rem;
+  cursor: pointer;
+
+  box-shadow: rgba(35, 121, 35, 0.25) 0px 54px 55px,
+    rgba(35, 121, 35, 0.12) 0px -12px 30px, rgba(35, 121, 35, 0.12) 0px 4px 6px,
+    rgba(35, 121, 35, 0.17) 0px 12px 13px, rgba(35, 121, 35, 0.09) 0px -3px 5px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  cursor: default;
+  background: var(--gray-color);
+  color: var(--black-color);
+  box-shadow: none;
+  transform: none;
+}
+
+/* button {
+  width: 10rem;
+  height: 5rem;
+  border: none;
+  background: var(--red-color);
+  color: var(--green-color);
+  font-family: NorseBold;
+  font-size: 2rem;
+  cursor: pointer;
+
+  box-shadow: rgba(35, 121, 35, 0.25) 0px 54px 55px,
+    rgba(35, 121, 35, 0.12) 0px -12px 30px, rgba(35, 121, 35, 0.12) 0px 4px 6px,
+    rgba(35, 121, 35, 0.17) 0px 12px 13px, rgba(35, 121, 35, 0.09) 0px -3px 5px;
+} */
